@@ -3,8 +3,10 @@ package main
 import (
 	"BharadwajaD/DistSys/base"
 
+	"sync"
 	"flag"
-    "github.com/rs/zerolog"
+	"github.com/rs/zerolog"
+	"github.com/rs/zerolog/log"
 )
 
 
@@ -21,5 +23,24 @@ func main(){
 	}
 
 	node := base.NewNode(*host, *port)
-	node.Start()
+
+	wg := sync.WaitGroup{}
+	wg.Add(1)
+	go func (){
+		defer wg.Done()
+		node.Start()
+	}()
+
+	testMessageSending(node, *port)
+	wg.Wait()
+}
+
+func testMessageSending(node *base.Node, port int) {
+	if port == 42069 {
+		reply , err := node.Send("127.0.0.1:42070", base.NewRPCMessage("Hello test"))
+		if err != nil {
+			log.Fatal().Msg(err.Error())
+		}
+		log.Info().Msg(reply.Content)
+	}
 }

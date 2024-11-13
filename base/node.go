@@ -1,6 +1,8 @@
 package base
 
 import (
+	"fmt"
+	"io"
 	"net"
 	"net/http"
 	"net/rpc"
@@ -21,12 +23,17 @@ type Node struct {
 	port int
 
 	id int //later generate it from host and port
+	rw io.ReadWriteCloser
 	rpc_server *rpc.Server
+	rpc_client *rpc.Client //TODO: deal with dis later
 }
 
 func NewNode(host string, port int) *Node {
 
 	rpc_server := rpc.NewServer()
+	//rpc_client := rpc.NewClient()
+	rpc_message := new(RPCMessage)
+	rpc_server.Register(rpc_message)
 
 	return &Node {
 		host: host,
@@ -35,6 +42,7 @@ func NewNode(host string, port int) *Node {
 	}
 }
 
+// HTTP Handler -> Handles http connections to this host:port
 func (node *Node) Start() {
 
 	listener, err := net.Listen("tcp", node.host+":"+strconv.Itoa(node.port))
@@ -48,6 +56,22 @@ func (node *Node) Start() {
 	http.Serve(listener, nil)
 }
 
-func (node *Node) AttachObj(obj any) {
+//used to send messages to other nodes
+//TODO: multiple type of messages (if needed)
+func (node *Node) Send(to_addr string, msg *RPCMessageRequest) (*RPCMessageResponse, error){
+	reply := new(RPCMessageResponse)
+	client, err := rpc.DialHTTPPath("tcp", to_addr, "/rpc")
 
+	if err != nil {
+		fmt.Println(err)
+		return nil, err
+	}
+
+	err = client.Call("RPCMessage.RpcReceive", msg, reply)
+	if err != nil {
+		return nil, err
+	}
+
+	return reply, nil
 }
+
