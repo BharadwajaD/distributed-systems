@@ -1,0 +1,87 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17">
+  <diagram name="Page-1" id="-aT4QX86PuzmGAsoGNnj">
+    <mxGraphModel dx="732" dy="434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-2" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="90" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-3" value="Connector" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="200" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-4" value="ch" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="130" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-5" value="ch" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-6" value="ch" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="160" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-7" value="tcp" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="140" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WSbLmRQclBoYPWPX_N4G-8" target="WSbLmRQclBoYPWPX_N4G-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-8" value="application" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="60" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-10" value="Invoke Read or Write" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="390" y="98" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-11" value="Connector" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="330" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="WSbLmRQclBoYPWPX_N4G-12" target="WSbLmRQclBoYPWPX_N4G-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-12" value="Mux" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="260" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-13" value="Handles RPC stuff" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="220" y="330" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-15" value="Buffer" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="435" y="145" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-16" value="Buffer" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="485" y="350" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="WSbLmRQclBoYPWPX_N4G-20" target="WSbLmRQclBoYPWPX_N4G-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-20" value="node1" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="345" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-21" value="node2" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="440" width="50" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="WSbLmRQclBoYPWPX_N4G-23" value="Makes RPC call" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="110" y="398" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="my6OClCsNY4qI4aW-iAV-1" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="490" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="my6OClCsNY4qI4aW-iAV-2" value="node" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="450" y="490" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="my6OClCsNY4qI4aW-iAV-3" value="connector" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="570" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrrL54IgeKCdOjNHaot-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="my6OClCsNY4qI4aW-iAV-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="my6OClCsNY4qI4aW-iAV-4" value="other applications" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="530" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrrL54IgeKCdOjNHaot-2" value="1. must have RPCMethod() and&amp;nbsp;&lt;div&gt;2. the corresponding RPCMethodCaller()&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="510" width="130" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
